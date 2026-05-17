@@ -5,6 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 import { RoleProvider } from "@/lib/RoleContext";
+import { AuthProvider } from "@/lib/AuthContext";
+import AuthWrapper from "@/components/AuthWrapper";
 import ClickEffect from "@/components/ClickEffect";
 import AIChatBot from "@/components/AIChatBot";
 
@@ -32,8 +34,12 @@ export default function RootLayout({
       >
         <ClickEffect />
         <RoleProvider>
-          {children}
-          <AIChatBot />
+          <AuthProvider>
+            <AuthWrapper>
+              {children}
+            </AuthWrapper>
+            <AIChatBot />
+          </AuthProvider>
         </RoleProvider>
       </body>
     </html>

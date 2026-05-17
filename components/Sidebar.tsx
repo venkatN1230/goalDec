@@ -4,11 +4,13 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { LayoutDashboard, Target, Users, Settings, LogOut, ChevronRight, PieChart, CheckSquare, Zap, Shield, User, Briefcase } from "lucide-react";
 import { useRole, Role } from "@/lib/RoleContext";
+import { useAuth } from "@/lib/AuthContext";
 import Link from "next/link";
 
 export default function Sidebar() {
   const [isExpanded, setIsExpanded] = useState(true);
   const { role, setRole } = useRole();
+  const { logout } = useAuth();
 
   const menuItems = [
     { name: "Dashboard", icon: LayoutDashboard, path: "/", roles: ['EMPLOYEE', 'MANAGER', 'ADMIN'] },
@@ -81,7 +83,10 @@ export default function Sidebar() {
             </div>
           </div>
         )}
-        <div className="flex items-center gap-3 px-3 py-3 rounded-xl cursor-pointer text-gray-400 hover:bg-white/5 hover:text-white transition-all">
+        <div 
+          onClick={logout}
+          className="flex items-center gap-3 px-3 py-3 rounded-xl cursor-pointer text-gray-400 hover:bg-white/5 hover:text-white transition-all"
+        >
           <LogOut className="w-5 h-5" />
           {isExpanded && <span className="font-medium text-sm">Sign Out</span>}
         </div>

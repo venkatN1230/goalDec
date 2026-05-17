@@ -1,0 +1,19 @@
+# Normalize line endings to LF on commit (cross-platform safe)
+* text=auto eol=lf
+
+# Explicitly declare text files
+*.ts    text eol=lf
+*.tsx   text eol=lf
+*.js    text eol=lf
+*.jsx   text eol=lf
+*.json  text eol=lf
+*.css   text eol=lf
+*.md    text eol=lf
+*.prisma text eol=lf
+
+# Binary files - no conversion
+*.png   binary
+*.jpg   binary
+*.ico   binary
+*.woff  binary
+*.woff2 binary

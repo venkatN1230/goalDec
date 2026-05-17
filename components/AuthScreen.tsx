@@ -207,7 +207,7 @@ export default function AuthScreen() {
                     onChange={(e) => setLoginEmail(e.target.value)}
                     required
                     disabled={isPending}
-                    className="w-full bg-navy-950/40 border border-white/10 rounded-xl py-3 pl-10 pr-4 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all font-mono"
+                    className="w-full bg-[#0c1324] text-white border border-white/20 rounded-xl py-3 pl-10 pr-4 text-sm placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all font-mono focus:bg-[#060a12] shadow-inner"
                   />
                 </div>
               </div>
@@ -225,7 +225,7 @@ export default function AuthScreen() {
                     onChange={(e) => setLoginPassword(e.target.value)}
                     required
                     disabled={isPending}
-                    className="w-full bg-navy-950/40 border border-white/10 rounded-xl py-3 pl-10 pr-4 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all font-mono"
+                    className="w-full bg-[#0c1324] text-white border border-white/20 rounded-xl py-3 pl-10 pr-4 text-sm placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all font-mono focus:bg-[#060a12] shadow-inner"
                   />
                 </div>
               </div>
@@ -294,7 +294,7 @@ export default function AuthScreen() {
                     onChange={(e) => setSignupName(e.target.value)}
                     required
                     disabled={isPending}
-                    className="w-full bg-navy-950/40 border border-white/10 rounded-xl py-3 pl-10 pr-4 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all"
+                    className="w-full bg-[#0c1324] text-white border border-white/20 rounded-xl py-3 pl-10 pr-4 text-sm placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all focus:bg-[#060a12] shadow-inner"
                   />
                 </div>
               </div>
@@ -312,7 +312,7 @@ export default function AuthScreen() {
                     onChange={(e) => setSignupEmail(e.target.value)}
                     required
                     disabled={isPending}
-                    className="w-full bg-navy-950/40 border border-white/10 rounded-xl py-3 pl-10 pr-4 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all font-mono"
+                    className="w-full bg-[#0c1324] text-white border border-white/20 rounded-xl py-3 pl-10 pr-4 text-sm placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all font-mono focus:bg-[#060a12] shadow-inner"
                   />
                 </div>
               </div>
@@ -330,7 +330,7 @@ export default function AuthScreen() {
                     onChange={(e) => setSignupPassword(e.target.value)}
                     required
                     disabled={isPending}
-                    className="w-full bg-navy-950/40 border border-white/10 rounded-xl py-3 pl-10 pr-4 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all font-mono"
+                    className="w-full bg-[#0c1324] text-white border border-white/20 rounded-xl py-3 pl-10 pr-4 text-sm placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all font-mono focus:bg-[#060a12] shadow-inner"
                   />
                 </div>
               </div>
